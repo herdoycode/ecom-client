@@ -1,13 +1,58 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;900&display=swap");
+
+:root {
+  --color-light: #ffffff;
+  --color-dark: #333;
+  --color-primary: #008caf;
+  --color-accent: #009b0d;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Urbanist", sans-serif;
+  color: var(--color-dark);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+input {
+  padding: 13px;
+  border: 1px solid #ddd;
+  outline: none;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  outline: none;
+  border: none;
+  padding: 12px 10px;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
 }
