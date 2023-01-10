@@ -28,7 +28,15 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="nav__right">
-        <h3>Profile</h3>
+        <img
+          className="auth__avatar"
+          src="https://i.ibb.co/pQHL2VX/1.jpg"
+          alt=""
+        />
+        <div className="cart">
+          {false && <div className="cart__item">6</div>}
+          <i className="fa fa-shopping-cart"></i>
+        </div>
       </div>
     </div>
   );
