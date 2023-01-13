@@ -1,7 +1,9 @@
+import Button from "@mui/material/Button";
 import Input from "../../components/Input/Input";
 import { useNavigate } from "react-router-dom";
 import "./Login.css";
 import { useState } from "react";
+import { Paper } from "@mui/material";
 const Login = () => {
   const navigage = useNavigate();
   const [formData, setFormData] = useState({
@@ -17,7 +19,7 @@ const Login = () => {
 
   return (
     <div className="login">
-      <div className="login__box">
+      <Paper className="login__box">
         <h1>Login</h1>
         <form>
           <Input
@@ -34,12 +36,17 @@ const Login = () => {
             value={formData.password}
             onChange={handleChange}
           />
-          <button className="btn__login">Login</button>
-          <button onClick={() => navigage("/signup")} className="btn__account">
+          <Button variant="contained">Login</Button>
+          <Button
+            variant="contained"
+            color="success"
+            onClick={() => navigage("/signup")}
+            className="btn__account"
+          >
             Create Account
-          </button>
+          </Button>
         </form>
-      </div>
+      </Paper>
     </div>
   );
 };

@@ -2,6 +2,7 @@ import Input from "../../components/Input/Input";
 import { useNavigate } from "react-router-dom";
 import "./Signup.css";
 import { useState } from "react";
+import { Button, Paper } from "@mui/material";
 const Signup = () => {
   const navigage = useNavigate();
   const [formData, setFormData] = useState({
@@ -17,7 +18,7 @@ const Signup = () => {
   };
   return (
     <div className="signup">
-      <div className="signup__box">
+      <Paper className="signup__box">
         <h1>Signup</h1>
         <form>
           <Input
@@ -41,12 +42,12 @@ const Signup = () => {
             value={formData.password}
             onChange={handleChange}
           />
-          <button className="btn__signup">Signup</button>
+          <Button variant="contained">Signup</Button>
           <a onClick={() => navigage("/login")} className="login__text">
             Already have account? Login
           </a>
         </form>
-      </div>
+      </Paper>
     </div>
   );
 };
