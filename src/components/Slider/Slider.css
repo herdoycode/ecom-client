@@ -1,0 +1,27 @@
+.slider {
+  width: 100%;
+  height: calc(100vh - 60px);
+  background: tomato;
+  position: relative;
+}
+
+.slide__prev,
+.slide__next {
+  position: absolute;
+  margin: auto;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: calc(50% - 22px);
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+.slide__prev {
+  left: 10px;
+}
+.slide__next {
+  right: 10px;
+}
