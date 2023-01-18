@@ -6,7 +6,11 @@ import { Avatar, Badge } from "@mui/material";
 const Navbar = () => {
   return (
     <div className="navbar">
-      <div className="nav__left">E-Com</div>
+      <div className="nav__left">
+        <NavLink to="/" className="nav__brand">
+          E-COM
+        </NavLink>
+      </div>
       <div className="nav__center">
         <div className="nav__search">
           <SearchIcon />
