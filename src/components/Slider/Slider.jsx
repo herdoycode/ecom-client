@@ -3,6 +3,7 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import { Button } from "@mui/material";
 import { useState } from "react";
+import { slides } from "../../data";
 const Slider = () => {
   const [slide, setSlide] = useState("slider__wrapper");
 
@@ -24,51 +25,20 @@ const Slider = () => {
       </div>
 
       <div className={slide}>
-        <div className="slide">
-          <div className="slide__img">
-            <img src="/img/slide1.png" alt="" />
-          </div>
-          <div className="slide__content">
-            <div className="content">
-              <h2>This is slider 1</h2>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis,
-                voluptate quis provident
-              </p>
-              <Button variant="outlined">SHOP NOW</Button>
+        {slides.map((item) => (
+          <div className="slide">
+            <div className="slide__img">
+              <img src={item.img} alt="" />
+            </div>
+            <div className="slide__content">
+              <div className="content">
+                <h2>{item.title}</h2>
+                <p>{item.content}</p>
+                <Button variant="outlined">SHOP NOW</Button>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="slide">
-          <div className="slide__img">
-            <img src="/img/slide1.png" alt="" />
-          </div>
-          <div className="slide__content">
-            <div className="content">
-              <h2>This is slider 2</h2>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis,
-                voluptate quis provident
-              </p>
-              <Button variant="outlined">SHOP NOW</Button>
-            </div>
-          </div>
-        </div>
-        <div className="slide">
-          <div className="slide__img">
-            <img src="/img/slide1.png" alt="" />
-          </div>
-          <div className="slide__content">
-            <div className="content">
-              <h2>This is slider 3</h2>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis,
-                voluptate quis provident
-              </p>
-              <Button variant="outlined">SHOP NOW</Button>
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
 
       <div onClick={handleNextSlide} className="slide__next">
