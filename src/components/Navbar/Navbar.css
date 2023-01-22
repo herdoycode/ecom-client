@@ -48,3 +48,20 @@
 .nav__margin {
   height: 60px;
 }
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    justify-content: space-around;
+  }
+  .nav__left {
+    justify-content: flex-start;
+    padding: 0px 10px;
+  }
+  .nav__right {
+    justify-content: flex-end;
+    padding: 0px 10px;
+  }
+  .nav__center {
+    display: none;
+  }
+}

@@ -26,7 +26,7 @@ const Slider = () => {
 
       <div className={slide}>
         {slides.map((item) => (
-          <div className="slide">
+          <div key={item.id} className="slide">
             <div className="slide__img">
               <img src={item.img} alt="" />
             </div>
@@ -34,7 +34,9 @@ const Slider = () => {
               <div className="content">
                 <h2>{item.title}</h2>
                 <p>{item.content}</p>
-                <Button variant="outlined">SHOP NOW</Button>
+                <Button variant="outlined" color="inherit">
+                  SHOP NOW
+                </Button>
               </div>
             </div>
           </div>
