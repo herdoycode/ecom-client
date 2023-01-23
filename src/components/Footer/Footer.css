@@ -1,0 +1,90 @@
+.footer {
+  display: flex;
+  padding: 40px 0px;
+}
+.footer__left,
+.footer__center,
+.footer__right {
+  flex: 1;
+  padding: 10px;
+}
+
+.footer__left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.social__nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.social__icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  cursor: pointer;
+}
+.facebook {
+  background: #3b5998;
+}
+.instagram {
+  background: #f09433;
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+}
+.linkedin {
+  background: #0a66c2;
+}
+.github {
+  background: #171515;
+}
+
+.footer__links {
+  margin: 20px 0px;
+}
+.footer__links ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__links ul li {
+  width: 50%;
+  margin: 5px 0px;
+}
+.footer__links ul li a {
+  color: #222;
+}
+.contact {
+  margin: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contact__item {
+  display: flex;
+  align-items: center;
+}
+.contact__item img {
+  width: 60%;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 20px 0px;
+    flex-direction: column;
+    gap: 40px;
+  }
+}
