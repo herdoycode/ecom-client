@@ -1,0 +1,35 @@
+.product__page__title {
+  text-align: center;
+  margin: 40px 0px;
+  font-size: 35px;
+}
+.filter__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.filter__color span {
+  font-weight: bold;
+  margin-right: 10px;
+}
+.filter__size span {
+  font-weight: bold;
+  margin-right: 10px;
+}
+.filter__color select {
+  padding: 15px 10px;
+  background: #fff;
+  outline: none;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.filter__size select {
+  padding: 15px 10px;
+  background: #fff;
+  outline: none;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
