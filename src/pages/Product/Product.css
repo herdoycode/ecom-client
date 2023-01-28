@@ -1,0 +1,135 @@
+.product__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  margin: 50px 0px;
+}
+.product__img {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mf {
+  height: 70vh;
+  width: auto;
+  object-fit: cover;
+}
+.product__details {
+  flex: 1;
+  height: 100%;
+}
+.product__details h2 {
+  font-size: 45px;
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+.product__details p {
+  font-size: 18px;
+  max-width: 80%;
+  margin-bottom: 20px;
+}
+.color__size {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 400px;
+  margin-top: 30px;
+}
+.color {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.color__select {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.color__select p {
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+}
+.colors {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.size {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.size p {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+}
+.size select {
+  padding: 10px 15px;
+  border: 2px solid var(--color-primary);
+  background: #fff;
+}
+.price {
+  font-size: 40px;
+  font-weight: 200;
+}
+.quantity {
+  display: flex;
+  margin-top: 30px;
+}
+.quantity button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.q__number {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+.add__btn {
+  text-transform: uppercase;
+  margin-top: 30px;
+  height: 40px;
+  padding: 0px 20px;
+  background: #fff;
+  border: 2px solid var(--color-primary);
+}
+.add {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .product__details h2 {
+    font-size: 40px;
+  }
+  .product__details p {
+    max-width: 100%;
+  }
+  .product__wrapper {
+    flex-direction: column;
+    gap: 50px;
+    height: auto !important;
+    padding: 0px 10px;
+  }
+  .color__size {
+    width: 350px;
+  }
+  .add {
+    width: 350px;
+  }
+}
